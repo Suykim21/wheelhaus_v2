@@ -28,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public', 'dist')))
 
 // Requiring config files
 require('./server/config/mongoose')
-require('./server/config/routes')(app);
+
+var route = require('./server/config/routes.js')(app)
 app.get('*', (req,res)=>{
   res.sendFile(path.resolve('public/dist/index.html'))
 })

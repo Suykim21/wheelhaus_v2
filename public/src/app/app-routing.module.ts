@@ -9,8 +9,8 @@ import { LandingComponent } from './landing/landing.component';
 
 
 const routes: Routes = [
+  {path: '', component: LandingComponent},
     {path: 'about', component: AboutComponent},
-    {path: '', component: LandingComponent},
     // {path: 'apparel', component: ApparelComponent},
     // {path: 'apparel/new', component: ApparelNewComponent},
     // {path: 'apparel/show/:id', component: ApparelShowComponent},
